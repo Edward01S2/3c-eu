@@ -1,0 +1,55 @@
+{
+    "key": "group_5cc1b60c394db",
+    "title": "Action - Footer Section",
+    "fields": [
+        {
+            "key": "field_5cc1b60c3c1d3",
+            "label": "Footer Section",
+            "name": "footer_section",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hide-label",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "choices": {
+                "none": "None",
+                "form": "Form",
+                "join": "Join"
+            },
+            "default_value": [
+                "join"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "action"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "metabox_title": "Footer Section",
+    "custom_css": "",
+    "modified": 1557398539
+}

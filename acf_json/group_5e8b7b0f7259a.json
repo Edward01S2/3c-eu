@@ -1,0 +1,51 @@
+{
+    "key": "group_5e8b7b0f7259a",
+    "title": "Resource - External",
+    "fields": [
+        {
+            "key": "field_5e8b7b195bda6",
+            "label": "External Link",
+            "name": "external_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "resource"
+            },
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "link"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "metabox_title": "External Link",
+    "custom_css": "",
+    "modified": 1586199702
+}

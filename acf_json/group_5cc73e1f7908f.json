@@ -1,0 +1,70 @@
+{
+    "key": "group_5cc73e1f7908f",
+    "title": "Post - External Link",
+    "fields": [
+        {
+            "key": "field_5cc73e73d1016",
+            "label": "External Link",
+            "name": "external_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hide-label",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "link"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "brief"
+            },
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "link"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "resource"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "metabox_title": "External Link",
+    "custom_css": "",
+    "modified": 1586198331
+}

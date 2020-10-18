@@ -1,0 +1,9 @@
+{
+  
+    "require": {
+        "infusionsoft/php-sdk": "^1.4",
+        "stoutlogic/acf-builder": "^1.9",
+        "johnbillion/extended-cpts": "^4.3",
+        "guzzlehttp/guzzle": "^6.5"
+    }
+}

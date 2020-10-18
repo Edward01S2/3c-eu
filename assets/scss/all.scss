@@ -1,0 +1,26 @@
+/*!
+Theme Name:         3C
+Theme URI:          https:/rndr.tech
+Description:        Minimal theme based on nosidebar
+Version:            1.0.0
+Author:             ES
+Author URI:         https:/rndr.tech
+
+License:            MIT License
+License URI:        http://opensource.org/licenses/MIT
+*/
+
+@import 'fontawesome/fontawesome';
+@import 'fontawesome/brands';
+@import 'fontawesome/regular';
+@import 'fontawesome/solid';
+@import "~flickity/dist/flickity.css";
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+@import 'states';
+@import 'style';
+@import 'tailwind';

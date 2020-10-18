@@ -1,0 +1,25 @@
+[27-Jul-2019 01:27:26 UTC] PHP Fatal error:  Call to undefined function genesis() in /home/hpzh95qmzt0p/public_html/wp-content/themes/3c/index.php on line 4
+[26-Mar-2020 15:11:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function genesis() in /home/hpzh95qmzt0p/public_html/wp-content/themes/3c/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/hpzh95qmzt0p/public_html/wp-content/themes/3c/index.php on line 4
+[27-Mar-2020 15:03:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function genesis() in /home/hpzh95qmzt0p/public_html/wp-content/themes/3c/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/hpzh95qmzt0p/public_html/wp-content/themes/3c/index.php on line 4
+[28-Mar-2020 15:43:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function genesis() in /home/hpzh95qmzt0p/public_html/wp-content/themes/3c/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/hpzh95qmzt0p/public_html/wp-content/themes/3c/index.php on line 4
+[29-Mar-2020 15:25:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function genesis() in /home/hpzh95qmzt0p/public_html/wp-content/themes/3c/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/hpzh95qmzt0p/public_html/wp-content/themes/3c/index.php on line 4
+[30-Mar-2020 15:47:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function genesis() in /home/hpzh95qmzt0p/public_html/wp-content/themes/3c/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/hpzh95qmzt0p/public_html/wp-content/themes/3c/index.php on line 4
+[31-Mar-2020 15:22:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function genesis() in /home/hpzh95qmzt0p/public_html/wp-content/themes/3c/index.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/hpzh95qmzt0p/public_html/wp-content/themes/3c/index.php on line 4

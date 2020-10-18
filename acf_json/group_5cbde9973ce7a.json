@@ -1,0 +1,43 @@
+{
+    "key": "group_5cbde9973ce7a",
+    "title": "Template - Contact",
+    "fields": [
+        {
+            "key": "field_5cbdea2a455eb",
+            "label": "Form",
+            "name": "contact_form",
+            "type": "gravity_forms_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "allow_null": 1,
+            "allow_multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/contact.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "metabox_title": "Contact",
+    "custom_css": "",
+    "modified": 1557398589
+}
