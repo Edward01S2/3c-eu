@@ -78,6 +78,9 @@ function cc_front_page_featured() {
     <?php echo $content; ?>
   </section><?php
   endif;
+
+  do_action( 'front_page_community' );
+
   ob_start();
   do_action( 'front_page_featured_row_2' );
   if ( $content = ob_get_clean() ):
@@ -87,6 +90,31 @@ function cc_front_page_featured() {
   </section>
   <?php
   endif;
+}
+
+add_action('front_page_community', 'es_community');
+function es_community() {
+  ?>
+  <section class="relative mb-16 shadowed bg-c-blue-100">
+    <div class="relative z-20 p-12 text-white">
+      <h2><?php echo get_field('com_title'); ?></h2>
+      <div><?php echo get_field('com_content'); ?></div>
+      <div class="grid grid-cols-1 py-8 gap-y-8 md:gap-y-12 lg:grid-cols-2 lg:gap-16 lg:pt-8 lg:pb-0">
+      <?php
+        if ( have_rows( 'com_items' ) ):
+          while( have_rows('com_items')) : the_row(); ?>
+          <div class="flex flex-col items-center justify-center md:flex-row md:justify-start md:space-x-12">
+            <img class="mb-6 md:w-40 md:h-auto xl:w-48" src="<?php echo get_sub_field('image')['url'] ?>" alt="">
+            <div class="text-center md:text-left"><?php echo get_sub_field('content') ?></div>
+          </div>
+        <?php endwhile;
+        endif;
+      ?>
+      </div>
+    </div>
+    <img class="absolute inset-0 z-0 object-center mx-auto md:my-auto" src="<?php echo get_field('com_bg')['url'] ?>" alt="">
+  </section>
+  <?php
 }
 
 add_action( 'front_page_featured_row_1', 'cc_front_page_cta' );

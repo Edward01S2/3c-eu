@@ -23,11 +23,11 @@ function cc_issues() {
         <h2 class="entry-title"><?php echo wp_kses_post( get_sub_field( 'title' ) ); ?></h2>
       </header>
       <div class="entry-content"><?php echo wp_kses_post( get_sub_field( 'text' ) ); ?></div>
-      <?php if ( $link ): ?>
+      <!-- <?php if ( $link ): ?>
       <footer class="entry-footer">
         <a class="read-more" href="<?php echo esc_url( $link ); ?>"><?php echo __( 'Learn More', 'connectedcouncil' ); ?> <i class="fas fa-long-arrow-alt-right"></i></a>
       </footer>
-      <?php endif; ?>
+      <?php endif; ?> -->
     </article>
     <?php endwhile; ?>
   </div>

@@ -8,7 +8,7 @@ const whitelister = require('purgecss-whitelister')
 
 mix.setPublicPath('./dist')
    .browserSync({
-      proxy: '3c.test',
+      proxy: '3c-europe.test',
       port: 5000,
     });
 
