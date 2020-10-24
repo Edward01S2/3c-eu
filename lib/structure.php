@@ -482,4 +482,12 @@ function cc_entry_markup() {
 //     return $new_states;
 // }
 
+function turn_blogposts_translation_off( $post_types, $is_settings ) {
+  unset( $post_types['post'] );
+  
+  return $post_types;
+}
+
+add_filter( 'pll_get_post_types', 'turn_blogposts_translation_off', 10, 2 );
+
 // END lib/structure.php //
