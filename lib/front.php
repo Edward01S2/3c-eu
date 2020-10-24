@@ -181,8 +181,8 @@ function cc_front_page_row_2_form() {
     <div class="form-content"><?php
       cc_heading( get_field( 'form_heading' ) );
       // var_dump($form);
-      gravity_form( 2, false, false, false, null, true, -1 );
-      // cc_form( $form ); ?>
+      //gravity_form( 2, false, false, false, null, true, -1 );
+      cc_form( $form ); ?>
     </div>
   </div>
   <?php
