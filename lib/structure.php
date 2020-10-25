@@ -490,4 +490,16 @@ function turn_blogposts_translation_off( $post_types, $is_settings ) {
 
 add_filter( 'pll_get_post_types', 'turn_blogposts_translation_off', 10, 2 );
 
+function turn_categoryblog_translation_off( $taxonomies, $is_settings ) {
+  unset( $taxonomies['category'] );
+  return $taxonomies;
+}
+add_filter( 'pll_get_taxonomies', 'turn_categoryblog_translation_off', 10, 2 );
+
+function turn_tagblog_translation_off( $taxonomies, $is_settings ) {
+  unset( $taxonomies['post_tag'] );
+  return $taxonomies;
+}
+add_filter( 'pll_get_taxonomies', 'turn_tagblog_translation_off', 10, 2 );
+
 // END lib/structure.php //
