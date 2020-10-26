@@ -6377,9 +6377,11 @@ body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_zip,
 body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_city,
 body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_state,
 body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_zip,
+body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_country,
 body #gform_wrapper_24 .gform_body .gform_fields .gfield .address_city,
 body #gform_wrapper_24 .gform_body .gform_fields .gfield .address_state,
-body #gform_wrapper_24 .gform_body .gform_fields .gfield .address_zip {
+body #gform_wrapper_24 .gform_body .gform_fields .gfield .address_zip,
+body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_country {
 	width: calc(33.33% - 1.33rem);
 	display: -moz-inline-stack;
 	display: inline-block;

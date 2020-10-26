@@ -375,4 +375,10 @@ article.type-action {
 .com-num {
   @apply text-c-orange-100 text-4xl font-bold;
 }
+
+.pll-parent-menu-item {
+  @screen xl {
+    padding-top: 2.75rem;
+  }
+}
 /* purgecss end ignore */
