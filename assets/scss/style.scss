@@ -6356,20 +6356,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 /* Gravity Forms Join */
-body #gform_wrapper_12 .gfield_address {
-	width: 100%;
+body #gform_wrapper_12, #gform_wrapper_22, #gform_wrapper_24 {
+	.gfield_address {
+		width: 100%;
+	}
 }
 
-body #gform_wrapper_12 .gform_body .gform_fields .ginput_container_address {
-	@apply flex flex-wrap justify-between;
-	.gf_clear {
-		@apply hidden;
+body #gform_wrapper_12, #gform_wrapper_22, #gform_wrapper_24 { 
+	.gform_body .gform_fields .ginput_container_address {
+		@apply flex flex-wrap justify-between;
+		.gf_clear {
+			@apply hidden;
+		}
 	}
 }
 
 body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_city,
 body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_state,
-body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_zip {
+body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_zip,
+body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_city,
+body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_state,
+body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_zip,
+body #gform_wrapper_24 .gform_body .gform_fields .gfield .address_city,
+body #gform_wrapper_24 .gform_body .gform_fields .gfield .address_state,
+body #gform_wrapper_24 .gform_body .gform_fields .gfield .address_zip {
 	width: calc(33.33% - 1.33rem);
 	display: -moz-inline-stack;
 	display: inline-block;
@@ -6388,28 +6398,44 @@ body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_zip {
 // 	padding-left: 1rem !important ;
 // }
 
-body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_line_1{
-	display: -moz-inline-stack;
-	display: inline-block;
-	width: calc(66.67% - 1.33rem);
-	margin-bottom: 2.25rem;	
+body #gform_wrapper_12, #gform_wrapper_22, #gform_wrapper_24 {
+	.gform_body .gform_fields .gfield .address_line_1{
+		display: -moz-inline-stack;
+		display: inline-block;
+		width: calc(66.67% - 1.33rem);
+		margin-bottom: 2.25rem;	
+	}
 }
 
-body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_line_2{
-	display: -moz-inline-stack;
-	display: inline-block;
-	width: calc(33.33% - 1.33rem);
-	margin-bottom: 2.25rem;
+body #gform_wrapper_12, #gform_wrapper_22, #gform_wrapper_24 { 
+	.gform_body .gform_fields .gfield .address_line_2{
+		display: -moz-inline-stack;
+		display: inline-block;
+		width: calc(33.33% - 1.33rem);
+		margin-bottom: 2.25rem;
 	// padding-left: 2rem !important ;	
+	}
 }
 
 @media only screen and (max-width: 767px) {
-	body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_city,
+ 	body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_city,
 	body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_zip,
 	body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_state,
 	body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_country,
 	body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_line_1,
-	body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_line_2 {
+	body #gform_wrapper_12 .gform_body .gform_fields .gfield .address_line_2,
+	body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_city,
+	body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_zip,
+	body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_state,
+	body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_country,
+	body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_line_1,
+	body #gform_wrapper_22 .gform_body .gform_fields .gfield .address_line_2,
+	body #gform_wrapper_24 .gform_body .gform_fields .gfield .address_city,
+	body #gform_wrapper_24 .gform_body .gform_fields .gfield .address_zip,
+	body #gform_wrapper_24 .gform_body .gform_fields .gfield .address_state,
+	body #gform_wrapper_24 .gform_body .gform_fields .gfield .address_country,
+	body #gform_wrapper_24 .gform_body .gform_fields .gfield .address_line_1,
+	body #gform_wrapper_24 .gform_body .gform_fields .gfield .address_line_2 {
 		width: 100%;
 		margin: 0;
 		margin-bottom: 2.25rem;
