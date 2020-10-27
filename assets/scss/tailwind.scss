@@ -381,4 +381,14 @@ article.type-action {
     padding-top: 0.75rem;
   }
 }
+
+#cmplz-cookies-overview {
+  @apply text-c-blue-400;
+  .cmplz-service-description {
+    @apply text-white;
+  }
+  .cmplz-sharing-data {
+    @apply text-white;
+  }
+}
 /* purgecss end ignore */
