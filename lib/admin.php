@@ -255,11 +255,32 @@ function pre_submission_handler( $form ) {
     $_POST['input_20'] = 'Membership -> 3C';
 }
 
+add_action( 'gform_pre_submission_24', function ( $form ) {
+    //$_POST['input_19'] = wp_generate_password();
+    $_POST['input_20'] = 'Membership -> 3C';
+});
+
+add_action( 'gform_pre_submission_22', function ( $form ) {
+  //$_POST['input_19'] = wp_generate_password();
+  $_POST['input_20'] = 'Membership -> 3C';
+});
+
+
 add_action( 'gform_pre_submission_2', 'pre_submission_handler_2' );
 function pre_submission_handler_2( $form ) {
     // $_POST['input_17'] = wp_generate_password();
     $_POST['input_6'] = '3C Subscribe';
 }
+
+add_action( 'gform_pre_submission_23', function ( $form ) {
+  //$_POST['input_19'] = wp_generate_password();
+  $_POST['input_6'] = 'Membership -> 3C';
+});
+
+add_action( 'gform_pre_submission_21', function ( $form ) {
+  //$_POST['input_19'] = wp_generate_password();
+  $_POST['input_6'] = 'Membership -> 3C';
+});
 
 add_action( 'gform_pre_submission_13', 'pre_submission_handler_13' );
 function pre_submission_handler_13( $form ) {
@@ -484,7 +505,7 @@ function resource_load_more(){
     $button = ($page < $wp_query->max_num_pages) ? $page : false;
 
     if($button) { ?>
-      <div class="pagination-load-more ajax-load-container flex justify-center w-full pt-12">
+      <div class="flex justify-center w-full pt-12 pagination-load-more ajax-load-container">
         <div class="ajax-loading"></div>
         <button class="ajax-load" data-page="<?php echo $button ?>">Load More</button>
       </div>
