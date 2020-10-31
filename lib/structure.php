@@ -15,7 +15,7 @@ function cc_pre_get_posts( $query ) {
     $query->set( 'posts_per_page', 9 );
     $cat = get_cat_ID('Coronavirus');
     $cat2 = get_cat_ID('Resilience');
-    $cat_ids = get_terms( 'category', array( 'fields' => 'ids', 'exclude' => array($cat, $cat2, 3382)) );
+    $cat_ids = get_terms( 'category', array( 'fields' => 'ids', 'exclude' => array()) );
 
     $query->set( 'category__in', $cat_ids );
     // if ( $category = get_field( 'newsletter_category', 'option' ) ) {
