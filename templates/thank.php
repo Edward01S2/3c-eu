@@ -5,7 +5,7 @@
 
 add_action( 'wp_head', 'es_header_scripts', 999 );
 function es_header_scripts() {
-  if ( $code = get_field( 'scripts'  ) ) {
+  if ( $code = get_field( 'script'  ) ) {
     echo "\n";
     echo $code;
     echo "\n";
