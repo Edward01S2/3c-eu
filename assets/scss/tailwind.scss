@@ -391,4 +391,10 @@ article.type-action {
     @apply text-white;
   }
 }
+
+.page-template-thank.has-featured-background {
+  .site-inner {
+    @apply mb-0 pb-8;
+  }
+}
 /* purgecss end ignore */
