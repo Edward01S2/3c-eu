@@ -32,7 +32,7 @@ function cc_featured_reports() {
   add_filter( 'genesis_entry_title_wrap', function() { return 'h2'; } );
 
   add_filter( 'genesis_post_title_text', function( $title ) {
-    return sprintf( '<a href="%s" rel="bookmark">%s</a>', get_permalink(), $title );
+    return sprintf( '<a href="%s" rel="bookmark" target="_blank">%s</a>', get_field('external_link'), $title );
   } );
 
   add_action( 'genesis_entry_header', function() {
@@ -144,7 +144,7 @@ add_filter('next_posts_link_attributes', function() {
 
 function cc_report_entry_footer() {
   ?>
-  <a class="button" href="<?php echo esc_url( get_permalink() ); ?>">
+  <a class="button" href="<?php echo esc_url( get_field('external_link') ); ?>" target="_blank">
     <span>View Report</span>
     <?php if ( get_field( 'report_type' ) === 'External Link' ): ?>
     <i class="fas fa-external-link-alt"></i>

@@ -121,7 +121,7 @@ function cc_entry_thumbnail_ouput() {
   if ( $show_entry_thumbnail || $show_icon === true ):
   echo '<div class="entry-thumbnail">';
     do_action( 'cc_entry_thumbnail_extra' );
-    if ( (get_post_format() === 'link' )) {
+    if ( (get_post_format() === 'link' ) || (get_post_type() == 'report') ) {
       echo $linked ? sprintf( '<a target="_blank" href="%s">', get_field('external_link') ) : '';
     }
     elseif($conn = get_field('connected_page')) {
