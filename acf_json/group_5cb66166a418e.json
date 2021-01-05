@@ -714,6 +714,22 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_5ff4cc29cdcb5",
+            "label": "Citation",
+            "name": "citation",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "translations": "copy_once"
         }
     ],
     "location": [
@@ -743,5 +759,5 @@
     "active": true,
     "description": "",
     "custom_css": "",
-    "modified": 1603291136
+    "modified": 1609878601
 }
