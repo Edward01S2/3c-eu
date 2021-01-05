@@ -113,7 +113,7 @@ function es_community() {
       </div>
       <?php if(get_field('citation')) : ?>
         <div class="pt-4 text-right">
-          <a class="italic text-white hover:text-c-orange-100" href="<?php echo get_field('citation')['url'] ?>"><?php echo get_field('citation')['title'] ?></a>
+          <a class="italic text-white hover:text-c-orange-100" href="<?php echo get_field('citation')['url'] ?>" target="_blank"><?php echo get_field('citation')['title'] ?></a>
         </div>
       <?php endif; ?>
     </div>
