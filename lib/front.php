@@ -111,9 +111,11 @@ function es_community() {
         endif;
       ?>
       </div>
-      <div class="pt-4 text-right">
-        <a class="italic text-white hover:text-c-orange-100" href="<?php echo get_field('citation')['url'] ?>"><?php echo get_field('citation')['title'] ?></a>
-      </div>
+      <?php if(get_field('citation')) : ?>
+        <div class="pt-4 text-right">
+          <a class="italic text-white hover:text-c-orange-100" href="<?php echo get_field('citation')['url'] ?>"><?php echo get_field('citation')['title'] ?></a>
+        </div>
+      <?php endif; ?>
     </div>
     <img class="absolute inset-0 z-0 object-center mx-auto md:my-auto" src="<?php echo get_field('com_bg')['url'] ?>" alt="">
   </section>
