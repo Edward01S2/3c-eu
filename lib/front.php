@@ -31,7 +31,7 @@ add_action( 'genesis_after_header', 'cc_front_page_video' );
 function cc_front_page_video() {
   if ( $video_url = get_field( 'video_url' ) ):
   ?>
-  <section class="video-section">
+  <!-- <section class="video-section">
     <video id="video" autoplay playsinline muted loop
       data-desktop-poster="<?php echo esc_url( get_field( 'video_poster' ) ); ?>.webp"
       data-desktop-src="<?php echo esc_url( $video_url ); ?>"<?php
@@ -43,8 +43,8 @@ function cc_front_page_video() {
       }
       ?>>
     </video>
-  </section>
-  <!-- <section class="relative">
+  </section> -->
+  <section class="relative">
       <img class="absolute z-10 object-cover object-center w-full h-full" src="<?php echo get_field('hero_bg')['url'] ?>" alt="">
       <div class="absolute z-20 w-full h-full bg-black dark-overlay bg-opacity-35"></div>
       <div class="relative z-30 py-24 wrap md:py-32 lg:py-48 xl:py-72">
@@ -52,11 +52,11 @@ function cc_front_page_video() {
         <a class="inline-flex items-center px-10 py-4 text-2xl font-bold transition duration-150 bg-white rounded-md shadow-md text-c-blue-200 hover:bg-c-orange-100 hover:text-white xl:text-3xl" href="<?php echo get_field('hero_link')['url'] ?>" target="_blank">
         <svg class="w-8 h-8 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
-        </svg> -->
-        <!--<?php echo get_field('hero_link')['title'] ?>
+        </svg>
+        <?php echo get_field('hero_link')['title'] ?>
         </a>
       </div>
-  </section> -->
+  </section>
   <?php
   endif;
 }
