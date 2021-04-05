@@ -17,7 +17,19 @@ function cc_pre_get_posts( $query ) {
     $cat2 = get_cat_ID('Resilience');
     $cat_ids = get_terms( 'category', array( 'fields' => 'ids', 'exclude' => array()) );
 
-    $query->set( 'category__in', $cat_ids );
+    $query->set( 'lang', '' );
+    if ( is_array( $query->get( 'tax_query' ) ) ) {
+			$tax_query = $query->get( 'tax_query' );
+
+			foreach ( $tax_query as $i => $row ) {
+				if ( 'language' === $row['taxonomy'] ) {
+					unset( $tax_query[ $i ] );
+				}
+			}
+
+			$query->set( 'tax_query', $tax_query );
+    }
+    //$query->set( 'category__in', $cat_ids );
     // if ( $category = get_field( 'newsletter_category', 'option' ) ) {
     //   $query->set( 'category__not_in', $category );
     //   if ( $query->get( 'paged' ) === 0 ) {
