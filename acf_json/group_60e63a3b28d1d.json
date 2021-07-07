@@ -1,0 +1,43 @@
+{
+    "key": "group_60e63a3b28d1d",
+    "title": "Page - Risk",
+    "fields": [
+        {
+            "key": "field_60e63a6fbb92d",
+            "label": "Form",
+            "name": "form",
+            "type": "gravity_forms_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "allow_null": 0,
+            "allow_multiple": 0,
+            "translations": "copy_once"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "action"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "metabox_title": "",
+    "custom_css": "",
+    "modified": 1625701013
+}

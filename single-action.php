@@ -34,14 +34,24 @@ function cc_action_loop() {
     <div class="action-content-container shadowed">
       <?php
       cc_entry_thumbnail_ouput(); ?>
-      <div class="entry-content"><?php
+      <div class="entry-content xl:p-16"><?php
         echo apply_filters( 'the_content', get_post_field( 'post_content', get_the_id() ) );
         if ( $cta = get_field( 'action_cta' ) ): ?>
         <h5 class="cta"><?php
           echo $cta ?>
           <i class="fas fa-long-arrow-alt-right"></i>
         </h5>
-        <?php endif; ?>
+        <?php endif; 
+          if( $form = get_field('form')) : ?>
+          <div>
+          <div class="form-content">
+          <?php
+            cc_form( $form ); 
+          ?>
+          </div>
+          </div>
+        <?php endif;
+        ?>
       </div>
     </div>
     <?php if ( $embed = get_field( 'form_embed_code' ) ): ?>
