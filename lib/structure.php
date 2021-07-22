@@ -514,4 +514,35 @@ function turn_tagblog_translation_off( $taxonomies, $is_settings ) {
 }
 add_filter( 'pll_get_taxonomies', 'turn_tagblog_translation_off', 10, 2 );
 
+add_filter( 'gform_countries', 'remove_country' );
+function remove_country( $countries ){
+    return array( 
+      'Austria',
+    'Belgium',
+    'Czechia',
+    'Denmark',
+    'Estonia',
+    'Finland',
+    'France',
+    'Germany',
+    'Greece',
+    'Hungary',
+    'Iceland',
+    'Italy',
+    'Latvia',
+    'Liechtenstein',
+    'Lithuania',
+    'Luxembourg',
+    'Malta',
+    'Netherlands',
+    'Norway',
+    'Poland',
+    'Portugal',
+    'Slovakia',
+    'Slovenia',
+    'Spain',
+    'Sweden',
+    'Switzerland' );
+}
+
 // END lib/structure.php //
