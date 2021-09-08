@@ -528,6 +528,7 @@ function remove_country( $countries ){
     'Greece',
     'Hungary',
     'Iceland',
+    'Ireland',
     'Italy',
     'Latvia',
     'Liechtenstein',
