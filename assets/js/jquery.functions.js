@@ -212,6 +212,16 @@ require('flickity-imagesloaded');
       );
     });
 
+    $(".voice-letter").click(function(e) {
+      e.preventDefault();
+      $([document.documentElement, document.body]).animate(
+        {
+          scrollTop: $($(this).attr("href")).offset().top
+        },
+        400
+      );
+    });
+
     $(".team-section-link a").click(function(e) {
       e.preventDefault();
       $([document.documentElement, document.body]).animate(
