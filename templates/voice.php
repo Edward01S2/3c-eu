@@ -30,7 +30,7 @@ function es_sections() {
       <div class="xl:w-1/2">
         <div>
           <?php echo get_field('content') ?>
-          <a href="#letter" class="button">SIGN THE LETTER</a>
+          <a href="#voice-letter" class="button">SIGN THE LETTER</a>
         </div>
       </div>
       <div class="xl:w-1/2">
@@ -42,7 +42,7 @@ function es_sections() {
     </div>
   </section>
 
-  <section id="letter" class="p-8 mb-24 bg-c-blue-400 md:p-12 xl:p-16">
+  <section id="voice-letter" class="p-8 mb-24 bg-c-blue-400 md:p-12 xl:p-16">
     <div class="text-white">
       <h3 class="text-center">Sign the letter here</h3>
       <div class="voice-form xl:max-w-[100rem] xl:mx-auto">
