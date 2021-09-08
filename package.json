@@ -5,13 +5,13 @@
     "sync": "browser-sync start --config bs-config.js",
     "css": "postcss style.css -u autoprefixer -o style.css --no-map",
     "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "TAILWIND_MODE=watch NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "@tailwindcss/ui": "^0.1.3",
-    "autoprefixer": "^7.1.2",
+    "@tailwindcss/forms": "^0.3.3",
+    "autoprefixer": "^10.3.4",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.0.1",
     "cross-env": "^7.0.0",
@@ -23,7 +23,7 @@
     "purgecss-with-wordpress": "^2.1.0",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
-    "tailwindcss": "^1.2.0",
+    "tailwindcss": "^2.2.14",
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
@@ -33,6 +33,7 @@
     "infinite-scroll": "^3.0.6",
     "jquery": "^3.4.1",
     "jquery-bridget": "^2.0.1",
-    "jsforce": "^1.9.3"
+    "jsforce": "^1.9.3",
+    "postcss": "^8.3.6"
   }
 }

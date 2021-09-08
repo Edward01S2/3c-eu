@@ -193,7 +193,7 @@
     @apply text-xl;
   }
   .gform_fields {
-    @apply md:flex-col md:flex-no-wrap;
+    @apply md:flex-col md:flex-nowrap;
   }
 }
 
@@ -417,5 +417,21 @@ article.type-action {
 
 #field_27_10 {
   @apply w-full #{!important};
+}
+
+.voice-form {
+
+}
+
+#field_28_11 {
+  @apply mb-4 md:w-full;
+}
+
+#field_28_8 {
+  @apply md:w-[calc(33.33%-1rem)];
+}
+
+#field_28_10 {
+  @apply md:w-[calc(66.67%-1rem)];
 }
 /* purgecss end ignore */

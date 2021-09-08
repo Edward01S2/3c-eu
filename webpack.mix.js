@@ -4,7 +4,7 @@ const mix = require('laravel-mix');
 
 const tailwindcss = require('tailwindcss');
 const { resolve } = require('path')
-const whitelister = require('purgecss-whitelister')
+//const whitelister = require('purgecss-whitelister')
 
 mix.setPublicPath('./dist')
    .browserSync({
