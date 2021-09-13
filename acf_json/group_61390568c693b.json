@@ -63,6 +63,26 @@
             "translations": "translate"
         },
         {
+            "key": "field_613f833f022a9",
+            "label": "Button Text",
+            "name": "button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
             "key": "field_613905c21246b",
             "label": "Letter Title",
             "name": "letter_title",
@@ -159,5 +179,5 @@
     "description": "",
     "metabox_title": "",
     "custom_css": "",
-    "modified": 1631551416
+    "modified": 1631552336
 }
