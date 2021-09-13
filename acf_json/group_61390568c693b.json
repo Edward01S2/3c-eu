@@ -103,6 +103,26 @@
             "translations": "translate"
         },
         {
+            "key": "field_613f7faa83c5b",
+            "label": "Form Title",
+            "name": "form_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "translations": "translate"
+        },
+        {
             "key": "field_613905ce1246d",
             "label": "Form",
             "name": "form",
@@ -139,5 +159,5 @@
     "description": "",
     "metabox_title": "",
     "custom_css": "",
-    "modified": 1631127424
+    "modified": 1631551416
 }
