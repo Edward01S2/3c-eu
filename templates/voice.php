@@ -30,19 +30,26 @@ function es_sections() {
       <div class="xl:w-1/2">
         <div>
           <?php echo get_field('content') ?>
-          <a href="#voice-letter" class="button voice-letter"><?php echo get_field('button_text') ?></a>
+          <!-- <a href="#voice-letter" class="button voice-letter"><?php echo get_field('button_text') ?></a> -->
         </div>
       </div>
       <div class="xl:w-1/2">
         <h3 class="font-bold"><?php echo get_field('letter_title') ?></h3>
-        <div class="p-8 bg-c-gray-200 md:p-12 xl:p-16">
+        <div class="voice-form xl:max-w-[100rem] xl:mx-auto bg-c-gray-200 p-8">
+          <?php
+            $form = get_field('form')['id'];
+            $form = ($form) ? $form : 24; 
+            gravity_form( $form, false, false, false, null, true, -1 ); 
+          ?>
+        </div>
+        <div class="p-8 md:p-12 xl:p-16">
           <?php echo get_field('letter') ?>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="voice-letter" class="p-8 mb-24 bg-c-blue-400 md:p-12 xl:p-16">
+  <!-- <section id="voice-letter" class="p-8 mb-24 bg-c-blue-400 md:p-12 xl:p-16">
     <div class="text-white">
       <h3 class="text-center"><?php echo get_field('form_title') ?></h3>
       <div class="voice-form xl:max-w-[100rem] xl:mx-auto">
@@ -53,7 +60,7 @@ function es_sections() {
         ?>
       </div>
     </div>
-  </section>
+  </section> -->
 
 <?php
 }
