@@ -438,4 +438,13 @@ article.type-action {
 #field_28_10 {
   @apply md:w-[calc(66.67%-1rem)];
 }
+
+.page-template-voice {
+  .site-header {
+    @apply hidden;
+  }
+  .site-inner {
+    @apply md:pt-24;
+  }
+}
 /* purgecss end ignore */
