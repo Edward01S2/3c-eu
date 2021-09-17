@@ -25,7 +25,7 @@ function es_sections() {
     </div>
   </section>
 
-  <section class="p-8 bg-white md:p-12 xl:p-16">
+  <section class="p-8 mb-24 bg-white md:p-12 xl:p-16">
     <div class="flex flex-col space-y-16 xl:flex-row xl:space-y-0 xl:space-x-20">
       <div class="xl:w-1/2">
         <div>
