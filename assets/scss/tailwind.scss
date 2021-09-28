@@ -435,7 +435,7 @@ article.type-action {
   @apply md:w-[calc(33.33%-1rem)];
 }
 
-#field_28_10 {
+#field_28_14 {
   @apply md:w-[calc(66.67%-1rem)];
 }
 
@@ -445,6 +445,13 @@ article.type-action {
   }
   .site-inner {
     @apply md:pt-24;
+  }
+}
+
+.page-id-397012 .bg-img-container {
+  background-image: none;
+  > div {
+    @apply py-20;
   }
 }
 /* purgecss end ignore */

@@ -14,7 +14,7 @@ function es_sections() {
 ?>
   <section>
     <div class="">
-      <div class="text-center text-white bg-center bg-cover" style="background-image:url(<?php echo get_the_post_thumbnail_url() ?>);">
+      <div class="text-center text-white bg-center bg-cover bg-c-blue-400 bg-img-container" style="background-image:url(<?php echo get_the_post_thumbnail_url() ?>);">
         <div class="px-8 py-40 mx-auto md:px-12 max-w-8xl xl:px-16">
           <h1 class="mb-8 font-semibold text-center md:flex md:items-center md:justify-center lg:text-6xl xl:text-7xl">
               <?php echo get_field('title') ?>
