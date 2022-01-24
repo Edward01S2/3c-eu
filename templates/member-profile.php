@@ -24,7 +24,7 @@ function cc_posts_template_loop() {
   // $current_category = isset( $_GET['category'] ) ? array( sanitize_key( $_GET['category'] ) ) : null;
 
   $args = array(
-    'category_name' => 'member_profile',
+    'category_name' => 'sme_profiles',
     'posts_per_page' => 9,
     'paged' => max( 1, get_query_var( 'paged' ) ),
   );
